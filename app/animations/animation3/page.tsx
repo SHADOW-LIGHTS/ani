@@ -17,22 +17,23 @@ export default function Animation3() {
         <p className="text-lg mb-2">Scroll Down</p>
         <ChevronsDown className="mx-auto h-8 w-8 animate-bounce" />
       </div>
-
-      <Heatmap
-  width={1280}
-  height={720}
-  image="/Group43.png"
-  colors={["#9b8046", "#ffffff"]}
-  colorBack="#ffffff"
-  contour={0.04}
-  angle={0}
-  noise={0.48}
-  innerGlow={1}
-  outerGlow={0.05}
-  speed={0.48}
-  scale={1.1}
-  offsetY={0.75}
-/>
+      <div className="bg-linear-to-br from-white to-gray-200 p-4 rounded-lg z-10">
+        <Heatmap
+          width={1280}
+          height={720}
+          image="/Group43.png"
+          colors={["#9b8046", "#ffffff"]}
+          colorBack="#ffffff"
+          contour={0.04}
+          angle={0}
+          noise={0.48}
+          innerGlow={1}
+          outerGlow={0.05}
+          speed={0.48}
+          scale={1.1}
+          offsetY={0.75}
+        />
+      </div>
     </div>
   );
 }
